@@ -44,8 +44,8 @@ body {
       height: 100%;
       display: flex;
 
-        &.selected::after
-        {
+       &.active::after
+      {
           content: "";
           position: absolute;
           bottom: 0px;
@@ -55,7 +55,7 @@ body {
           background-color: #ffffff;
           border-top-left-radius: 1px;
           border-top-right-radius: 1px;
-        }
+      }  
     }
   }
 
@@ -84,3 +84,4 @@ body {
     }
   }
 }
+
