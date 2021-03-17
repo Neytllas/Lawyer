@@ -18,4 +18,6 @@ body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMac
 
 .navbar .nav-link:hover { color: white; text-decoration: underline; }
 
+.navbar .color-item { color: #ab0606; }
+
 /*# sourceMappingURL=main.css.map */
