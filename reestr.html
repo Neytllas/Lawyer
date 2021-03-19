@@ -9,35 +9,28 @@ short: reestr
         </div>    
     </div>
 
-<table class="table">
-    <thead class="thead-dark">
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Имя</th>
-        <th scope="col">Фамилия</th>
-        <th scope="col">Username</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
-      </tr>
-    </tbody>
+    <table class="table">
+      <thead>
+          <tr>
+              <th>ФИО</th>
+              <th>Номер телефона</th>
+              <th>Адресс</th>
+              <th>Офис</th>
+              <th>Бесплатная юр. помощь</th>
+          </tr>
+      </thead>
+      <tbody>
+        {% for lawyer in site.data.lawyer %}
+          <tr>
+              <td>{{lawyer.name}}</td>
+              <td>{{lawyer.number}}</td>
+              <td>{{lawyer.status}}</td>
+              <td>{{lawyer.address}}</td>
+              <td>{{lawyer.office}}</td>
+              <td>{{lawyer.pyb}}</td>
+          </tr>
+          {% endfor %}
+      </tbody>
   </table>
   
   
