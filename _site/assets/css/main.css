@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body { background: #ffffff; color: #000000; font-family: 'PT Sans', sans-serif; }
 
 :root { --gap: 3rem; }
@@ -51,5 +52,19 @@ body { background: #ffffff; color: #000000; font-family: 'PT Sans', sans-serif; 
 .image-container .anim-img { position: absolute; z-index: 1; -webkit-transition: all ease 500ms; -o-transition: all ease 500ms; transition: all ease 500ms; }
 
 .image-container .anim-img:hover { -webkit-box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.3); box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.3); z-index: 10; -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); -webkit-transition: all ease 500ms; -o-transition: all ease 500ms; transition: all ease 500ms; }
+
+.center-img { display: block; margin: 0 auto; }
+
+.pagination { display: inline-block; }
+
+.pagination a { color: black; float: left; padding: 8px 16px; text-decoration: none; }
+
+.pagination a.active { background-color: #4CAF50; color: white; border-radius: 5px; }
+
+.pagination a:hover:not(.active) { background-color: #ddd; border-radius: 5px; }
+
+.rightimg { float: right; /* Выравнивание по правому краю  */ margin: 7px 0 7px 7px; /* Отступы вокруг картинки */ }
+
+.leftimg { float: left; /* Выравнивание по левому краю */ margin: 7px 7px 7px 0; /* Отступы вокруг картинки */ }
 
 /*# sourceMappingURL=main.css.map */
