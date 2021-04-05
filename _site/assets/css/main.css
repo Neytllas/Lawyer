@@ -46,4 +46,10 @@ body { background: #ffffff; color: #000000; font-family: 'PT Sans', sans-serif; 
 
 .plashka:hover { text-decoration: none; color: #780404; }
 
+.image-container { position: relative; width: 100%; height: 250px; }
+
+.image-container .anim-img { position: absolute; z-index: 1; -webkit-transition: all ease 500ms; -o-transition: all ease 500ms; transition: all ease 500ms; }
+
+.image-container .anim-img:hover { -webkit-box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.3); box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.3); z-index: 10; -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); -webkit-transition: all ease 500ms; -o-transition: all ease 500ms; transition: all ease 500ms; }
+
 /*# sourceMappingURL=main.css.map */
