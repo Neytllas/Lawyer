@@ -58,6 +58,11 @@
             <h1>Реестр</h1>
         </div>
 
+        <div class="pb-2 pt-2 d-flex">
+            <input id="filterText" class="form-control form-control-lg" placeholder="ФИО" type="text"> 
+            <button class="ml-2 btn btn-lg btn-danger" onclick="onFilterClick(this)">Поиск</button>
+          </div>
+
     <table class="table">
       <thead>
           <tr>
@@ -2568,6 +2573,27 @@
   </table> 
 </div>
 </main>
+
+<script>
+    function onFilterClick(btn)
+    {
+        console.log("Filter")
+        let a = document.querySelectorAll(".list-group-item");
+        let filterText = document.getElementById("filterText");
+
+        for(let row of a) 
+        {
+            if (row.innerText.toLowerCase().includes(filterText.value.toLowerCase())) 
+            {
+                row.classList.remove("d-none"); 
+            }     
+            else 
+            {
+                row.classList.add("d-none");
+            }
+        }
+    }
+</script>
 
 
   </div>
