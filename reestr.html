@@ -9,8 +9,7 @@ short: reestr
         </div>
 
         <div class="pb-2 pt-2 d-flex">
-            <input id="filterText" class="form-control form-control-lg" placeholder="ФИО" type="text"> 
-            <button class="ml-2 btn btn-lg btn-danger" onclick="onFilterClick(this)">Поиск</button>
+            <input oninput="onFilterClick(this)" id="filterText" class="form-control form-control-lg" placeholder="Введите информацию для поиска" type="text"> 
           </div>
 
     <table class="table">
@@ -26,7 +25,7 @@ short: reestr
       </thead>
       <tbody>
         {% for lawyer in site.data.lawyer %}
-          <tr>
+          <tr class="item">
               <td>{{lawyer.name}}</td>
               <td>{{lawyer.number}}</td>
               <td>{{lawyer.status}}</td>
@@ -44,7 +43,7 @@ short: reestr
     function onFilterClick(btn)
     {
         console.log("Filter")
-        let a = document.querySelectorAll(".table");
+        let a = document.querySelectorAll(".item");
         let filterText = document.getElementById("filterText");
 
         for(let row of a) 
