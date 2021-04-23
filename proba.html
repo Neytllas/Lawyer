@@ -12,23 +12,23 @@ short: proba
         <div class="accordion" id="accordionExample">
             {% for branches in site.data.branches %}
             <div class="card">
-              <div class="card-header" id="{{ forloop.index }}">
+              <div class="card-header" id="headingOne">
                 <h2 class="mb-0">
                   <button class="btn  btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     {{branches.name}}
                   </button>
                 </h2>
               </div>
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div id="collapse-{{ forloop.index }}" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
-                  <b>Адрес:  </b> {% if branches.adres %}<span>{{branches.adres}}</span>{% endif %}<br> 
-                  <b>Телефон филиала:  </b> {% if branches.pn %}<span>{{branches.pn}}</span>{% endif %}<br>
-                  <b>Ф.И.О. заведующего; Номер телефона: </b> {% if branches.manager %}<span>{{branches.manager}}</span>{% endif %}<br>
-                  <b>Электронная почта: </b> <a href={{% if branches.mail %}<span>{{branches.mail}}</span>{% endif %}} ></a>  {% if branches.mail %}<span>{{branches.mail}}</span>{% endif %}
+                    {% if branches.adres %}<b>Адрес:  </b> <span>{{branches.adres}}</span><br> {% endif %}
+                    {% if branches.pn %} <b>Телефон филиала:  </b> <span>{{branches.pn}}</span><br>{% endif %}
+                    {% if branches.manager %}<b>Ф.И.О. заведующего; Номер телефона: </b> <span>{{branches.manager}}</span><br>{% endif %}
+                    {% if branches.mail %}<b>Электронная почта: </b> <a href={{branches.mail}} ></a> <span>{{branches.mail}}</span><br>{% endif %}
               </div>
-              {% endfor %}
             </div>
         </div>
+        {% endfor %}
     </div>
 </main>
 
