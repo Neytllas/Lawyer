@@ -9,6 +9,8 @@ body { background: #ffffff; color: #000000; font-family: 'PT Sans', sans-serif; 
 
 .navbar .navbar-brand { color: white; display: flex; justify-content: end; }
 
+.navbar .navbar-toggler { color: white; }
+
 .navbar .navbar-nav { height: 100%; display: flex; align-items: center; width: 100%; }
 
 .navbar .navbar-nav .nav-item { height: 100%; display: flex; position: relative; }
@@ -43,13 +45,13 @@ body { background: #ffffff; color: #000000; font-family: 'PT Sans', sans-serif; 
 
 .my-row { padding-right: 24px; padding-left: 0; margin-right: 20px; margin-left: 20px; display: flex; align-items: center; margin: 10px 0 10px; }
 
-.plashka { display: flex; align-items: center; flex-direction: column; background-color: #F7F7F7; width: 100%; height: 100%; }
+.plashka { display: flex; align-items: center; flex-direction: column; background-color: #F7F7F7; width: 100%; height: 100%; text-align: center; }
 
 .plashka:hover { text-decoration: none; color: #780404; }
 
-.image-container { position: relative; width: 100%; height: 250px; }
+.image-container { position: relative; width: 100%; margin: 2em 0; }
 
-.image-container .anim-img { position: absolute; z-index: 1; -webkit-transition: all ease 500ms; -o-transition: all ease 500ms; transition: all ease 500ms; }
+.image-container .anim-img { z-index: 1; -webkit-transition: all ease 500ms; -o-transition: all ease 500ms; transition: all ease 500ms; }
 
 .image-container .anim-img:hover { -webkit-box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.3); box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.3); z-index: 10; -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); -webkit-transition: all ease 500ms; -o-transition: all ease 500ms; transition: all ease 500ms; }
 
@@ -66,5 +68,13 @@ body { background: #ffffff; color: #000000; font-family: 'PT Sans', sans-serif; 
 .rightimg { float: right; /* Выравнивание по правому краю  */ margin: 7px 0 7px 7px; /* Отступы вокруг картинки */ }
 
 .leftimg { float: left; /* Выравнивание по левому краю */ margin: 7px 7px 7px 0; /* Отступы вокруг картинки */ }
+
+.content img { max-width: 100%; }
+
+#carouselExampleControls2 { height: 550px; overflow: hidden; }
+
+@media (max-width: 500px) { .content { padding: 1em; } #carouselExampleControls2 { height: 250px; } }
+
+@media (max-width: 992px) { .navbar-collapse { z-index: 1000; } .navbar-collapse.collapsing { height: 0px; } .navbar .navbar-nav { align-items: stretch; height: auto; overflow: auto; } .nav-item { flex-grow: 1; background-color: #333333; } .greetings { margin-top: 1.5rem; } }
 
 /*# sourceMappingURL=main.css.map */

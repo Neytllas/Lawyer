@@ -32,6 +32,12 @@ body {
     justify-content: end;
   }
 
+  .navbar-toggler {
+    color: white;
+  }
+
+ 
+
   .navbar-nav
   {
     height: 100%;
@@ -193,6 +199,7 @@ body {
     background-color: #F7F7F7;
     width:100%;
     height: 100%;
+    text-align: center;
 
     &:hover
     {
@@ -205,12 +212,11 @@ body {
   {
     position: relative;
     width: 100%;
-    height: 250px;
+    margin: 2em 0;
   }
   
   .image-container .anim-img 
   {
-    position: absolute;
     z-index: 1;
     -webkit-transition: all ease 500ms;
     -o-transition: all ease 500ms;
@@ -267,5 +273,50 @@ body {
   margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
  }
 
+.content img {
+  max-width: 100%;
+} 
 
- 
+#carouselExampleControls2{
+  height: 550px;
+  overflow: hidden;
+}
+
+
+
+@media (max-width: 500px) {
+  .content {
+    padding: 1em;
+  }
+  
+  #carouselExampleControls2{
+    height: 250px;
+  }
+
+
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    z-index: 1000;
+    &.collapsing {
+      height: 0px;
+    }
+  }
+  .navbar .navbar-nav {
+    align-items: stretch;
+    height: auto;
+    overflow: auto;
+  }
+  .navbar .nav-link {
+    &:hover {
+    }
+  }
+  .nav-item {
+    flex-grow: 1;
+    background-color: #333333;;
+  }
+  .greetings {
+    margin-top: 1.5rem;
+  }
+}
