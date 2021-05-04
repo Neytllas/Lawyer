@@ -282,29 +282,10 @@ body {
   overflow: hidden;
 }
 
-.link a {
-  box-sizing: border-box;
-  border: 1px solid white;
-  color: white;
-  font-size: 12px;
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: 1.2px;
-  line-height: 1;
-  padding: 15px 40px;
-  position: relative;
+.link-doc
+{
+  padding-bottom: 300px;
 }
-.link a:after {
-  content: "";
-  display: block;
-  border: 1px solid white;
-  position: absolute;
-  top: -5px;
-  right: 3px;
-  bottom: -5px;
-  left: 3px;
-}
-
 
 
 @media (max-width: 500px) {
@@ -316,7 +297,10 @@ body {
     height: 250px;
   }
 
-
+  .link-doc
+  {
+    padding-bottom: 0px;
+  }
 }
 
 @media (max-width: 992px) {

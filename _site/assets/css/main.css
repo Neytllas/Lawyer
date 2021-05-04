@@ -73,11 +73,9 @@ body { background: #ffffff; color: #000000; font-family: 'PT Sans', sans-serif; 
 
 #carouselExampleControls2 { height: 550px; overflow: hidden; }
 
-.link a { box-sizing: border-box; border: 1px solid white; color: white; font-size: 12px; font-style: italic; font-weight: 400; letter-spacing: 1.2px; line-height: 1; padding: 15px 40px; position: relative; }
+.link-doc { padding-bottom: 300px; }
 
-.link a:after { content: ""; display: block; border: 1px solid white; position: absolute; top: -5px; right: 3px; bottom: -5px; left: 3px; }
-
-@media (max-width: 500px) { .content { padding: 1em; } #carouselExampleControls2 { height: 250px; } }
+@media (max-width: 500px) { .content { padding: 1em; } #carouselExampleControls2 { height: 250px; } .link-doc { padding-bottom: 0px; } }
 
 @media (max-width: 992px) { .navbar-collapse { z-index: 1000; } .navbar-collapse.collapsing { height: 0px; } .navbar .navbar-nav { align-items: stretch; height: auto; overflow: auto; } .nav-item { flex-grow: 1; background-color: #333333; } .greetings { margin-top: 1.5rem; } }
 
