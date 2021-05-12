@@ -75,8 +75,8 @@ body { background: #ffffff; color: #000000; font-family: 'PT Sans', sans-serif; 
 
 .link-doc { padding-bottom: 300px; }
 
-@media (max-width: 500px) { .content { padding: 1em; } #carouselExampleControls2 { height: 250px; } .link-doc { padding-bottom: 0px; } }
+@media (max-width: 500px) { .content { padding: 1em; } .link-doc { padding-bottom: 0px; } }
 
-@media (max-width: 992px) { .navbar-collapse { z-index: 1000; } .navbar-collapse.collapsing { height: 0px; } .navbar .navbar-nav { align-items: stretch; height: auto; overflow: auto; } .nav-item { flex-grow: 1; background-color: #333333; } .greetings { margin-top: 1.5rem; } }
+@media (max-width: 992px) { .navbar-collapse { z-index: 1000; } .navbar-collapse.collapsing { height: 0px; } .navbar .navbar-nav { align-items: stretch; height: auto; overflow: auto; } .nav-item { flex-grow: 1; background-color: #333333; } .greetings { margin-top: 1.5rem; } #carouselExampleControls2 { height: 250px; } }
 
 /*# sourceMappingURL=main.css.map */
