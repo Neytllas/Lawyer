@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Адвокатская палата</title>
+    <title>Иркутская областная коллегия адвокатов</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="/assets/css/main.css" />
@@ -32,25 +32,29 @@
       <button class="navbar-toggler h-100" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav d-flex justify-content-between">
-          <li class="nav-item {% if page.short == 'governing_bodies' %}active{% endif %}">
-            <a class="nav-link" href="/governing_bodies.html">Органы управления</a>
-          </li>
-          <li class="nav-item {% if page.short == 'reestr' %}active{% endif %}">
-            <a class="nav-link" href="/reestr.html">Реестр адвокатов</a>
-          </li>
-          <li class="nav-item {% if page.short == 'branches' %}active{% endif %}">
-            <a class="nav-link" href="/branches.html">Дислокация филиалов</a>
-          </li>
-          <li class="nav-item {% if page.short == 'citizens' %}active{% endif %}">
-            <a class="nav-link" href="/citizens.html">Гражданам</a>
-          </li>
-        </ul>
-      </div>
-    </nav>    
-    {{content}}
-  </div>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav d-flex justify-content-between">
+        <li class="nav-item {% if page.short == 'index' %}active{% endif %}">
+          <a class="nav-link" href="/index.html">Адвокатская палата<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item {% if page.short == 'reestr' %}active{% endif %}">
+          <a class="nav-link" href="/reestr.html">Реестр адвокатов</a>
+        </li>
+        <li class="nav-item {% if page.short == 'branches' %}active{% endif %}">
+          <a class="nav-link" href="/branches.html">Дислокация филиалов</a>
+        </li>
+        <li class="nav-item {% if page.short == 'citizens' %}active{% endif %}">
+          <a class="nav-link" href="/citizens.html">Гражданам</a>
+        </li>
+        <li class="nav-item {% if page.short == 'governing_bodies' %}active{% endif %}">
+          <a class="nav-link" href="/governing_bodies.html">Органы управления</a>
+        </li>
+      </ul>
+    </div>
+  </nav>    
+  {{content}}
+</div>
 
 
 <!-- Footer -->
@@ -152,7 +156,7 @@
 
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-    © 2020 Copyright:
+    © 2021 Copyright:
     <a class="text-white" href="#">Иркутская областная коллегия адвокатов</a>
   </div>
   <!-- Copyright -->
