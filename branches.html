@@ -24,8 +24,9 @@ short: branches
                     {% if branches.adres != "" %}<b>Адрес:  </b> <span>{{branches.adres}}</span><br> {% endif %}
                     {% if branches.pn != "" %} <b>Телефон филиала:  </b> <span>{{branches.pn}}</span><br>{% endif %}
                     {% if branches.manager != "" %}<b>Ф.И.О. заведующего; Номер телефона: </b> <span>{{branches.manager}}</span><br>{% endif %}
-                    {% if branches.mail != "" %}<b>Электронная почта: </b> <a href={{branches.mail}} ></a> <span>{{branches.mail}}</span><br>{% endif %}
-                    {% if branches.site != "" %}<b>Сайт филиала:  </b> <span>{{branches.site}}</span><br> {% endif %}
+                    {% if branches.mail != "" %}<b>Электронная почта: </b> <a href="mailto:{{branches.mail}}"> <span>{{branches.mail}}</span>  </a> <br>{% endif %}
+                    {% if branches.site != "" %}<b>Сайт филиала:  </b> <a href="{{branches.site}}"><span>{{branches.site}}</span></a> <br> {% endif %}
+                    <a href=""></a>
               </div>
             </div>
     </div>
