@@ -19,16 +19,19 @@ short: branches
                   </button>
                 </h2>
               </div>
-              <div id="collapse-{{ forloop.index }}" class="collapse {% if forloop.index == 1 %}show{% endif %}" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div id="collapse-{{ forloop.index }}" class="collapse {% if forloop.index == 1 %}show{% endif %}" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
                     {% if branches.adres != "" %}<b>Адрес:  </b> <span>{{branches.adres}}</span><br> {% endif %}
                     {% if branches.pn != "" %} <b>Телефон филиала:  </b> <span>{{branches.pn}}</span><br>{% endif %}
                     {% if branches.manager != "" %}<b>Ф.И.О. заведующего; Номер телефона: </b> <span>{{branches.manager}}</span><br>{% endif %}
                     {% if branches.mail != "" %}<b>Электронная почта: </b> <a href="mailto:{{branches.mail}}"> <span>{{branches.mail}}</span>  </a> <br>{% endif %}
-                    {% if branches.site != "" %}<b>Сайт филиала:  </b> <a href="{{branches.site}}"><span>{{branches.site}}</span></a> <br> {% endif %}
-                    <a href=""></a>
-              </div>
+                    {% if branches.site != "" %}<b>Сайт филиала:  </b> <a href="http://{{branches.site}}"><span>{{branches.site}}</span></a> <br> {% endif %}
+                </div>
+                <div class="col-md-4 col-sm-6 image-container align-items-right ">
+                  {% if branches.image %} <img src="{{branches.image}}" class="d-block w-100" alt=""> {% endif %}
+                </div>
             </div>
+              
     </div>
     {% endfor %}
 </div>
